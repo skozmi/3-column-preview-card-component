@@ -1,11 +1,52 @@
 body {
     font-family: 'Lexend Deca', sans-serif;
+    background: hsla(0, 0%, 100%, 0.75);  
 }
 
-h1 {
+h1, h2, h3, h4, h5, h6 {
     font-family: 'Big Shoulders Display', cursive;
+    text-transform: uppercase;
+    color: hsl(0, 0%, 95%);
 }
 
+p {
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+/*containers*/
+
+.container-fluid {
+    padding: 7% 15%;
+}
+
+/*cards*/
+.sedans-div {
+    background: hsl(31, 77%, 52%);
+}
+
+.suvs-div {
+    background: hsl(184, 100%, 22%) ;
+}
+
+.luxury-div {
+    background: hsl(179, 100%, 13%);
+}
+
+.sedans-div, .suvs-div, .luxury-div {
+    padding: 3%;
+}
+
+/*icons*/
+.icons {
+    width: 15%;
+}
+
+/*buttons*/
+.learn-button {
+    color: hsla(0, 0%, 100%, 0.75);
+    border: 1px solid hsla(0, 0%, 100%, 0.75);
+    border-radius: 25px;
+}
 
 
 .attribution { font-size: 11px; text-align: center; }
