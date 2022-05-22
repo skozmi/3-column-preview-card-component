@@ -1,6 +1,7 @@
 body {
     font-family: 'Lexend Deca', sans-serif;
-    background: hsla(0, 0%, 100%, 0.75);  
+    background: hsla(0, 0%, 100%, 0.75);
+    font-size: 15px;  
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -19,13 +20,18 @@ p {
     padding: 7% 15%;
 }
 
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+
 /*cards*/
 .sedans-div {
     background: hsl(31, 77%, 52%);
 }
 
 .suvs-div {
-    background: hsl(184, 100%, 22%) ;
+    background: hsl(184, 100%, 22%);
 }
 
 .luxury-div {
@@ -34,6 +40,7 @@ p {
 
 .sedans-div, .suvs-div, .luxury-div {
     padding: 3%;
+    margin: 0 !important;
 }
 
 /*icons*/
@@ -42,12 +49,72 @@ p {
 }
 
 /*buttons*/
-.learn-button {
-    color: hsla(0, 0%, 100%, 0.75);
-    border: 1px solid hsla(0, 0%, 100%, 0.75);
+.learn-btn {
+    background: hsl(0, 0%, 95%);
+    border: 1px solid hsl(0, 0%, 95%);
     border-radius: 25px;
 }
 
+.learn-btn:hover {
+    background: hsla(0, 0%, 100%, 0);
+    color: hsl(0, 0%, 95%);
+}
 
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+.sedans-btn {
+    color: hsl(31, 77%, 52%);
+}
+
+.suvs-btn {
+    color: hsl(184, 100%, 22%);
+}
+
+.luxury-btn {
+    color: hsl(179, 100%, 13%);
+}
+
+/*footer link*/
+.attribution a { 
+    color: hsl(228, 45%, 44%);
+}
+
+@media (max-width:1500px) {
+
+    .container-fluid {
+        padding: 7% 10%;
+    }
+}
+
+@media (max-width:1024px) {
+
+    .container-fluid {
+        padding: 5% 5%;
+    }
+}
+
+@media (max-width:800px) {
+    .container-fluid {
+        padding: 3% 2%;
+    }
+
+    .learn-btn {
+        font-size: 16px;
+    }
+}
+
+@media (max-width:650px) {
+    .card-group {
+        display: flex !important;
+        flex-flow: column wrap !important;
+    }
+}
+
+@media (max-width:300px) {
+    body {
+        font-size: 12px;
+    }
+
+    .learn-btn {
+        font-size: 13px;
+    }
+
+}
