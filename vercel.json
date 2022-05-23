@@ -1,16 +1,15 @@
 {
     "version": 2,
-    "name": "3-column-preview-card-component",
     "builds": [
-       { 
-           "src": "./index.js", 
-           "use": "@vercel/node" 
+        {
+            "src": "./index.js",
+            "use": "@vercel/node"
         }
     ],
     "routes": [
-       { 
-           "src": "/(.*)", 
-           "dest": "/" 
+        {
+            "src": "/(.*)",
+            "dest": "/"
         }
     ]
- }
+}
