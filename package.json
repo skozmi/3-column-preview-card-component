@@ -10,7 +10,7 @@
   "author": "Miloš Mirković",
   "license": "ISC",
   "engines": {
-    "node": "16.15.0"
+    "node": "16.15"
   },
   "dependencies": {
     "body-parser": "^1.20.0",
